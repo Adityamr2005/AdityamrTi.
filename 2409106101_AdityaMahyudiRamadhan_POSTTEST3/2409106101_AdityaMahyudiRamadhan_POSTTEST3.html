@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dasboard PT. Ebos Group</title>
+
+    <link rel="stylesheet" href="2409106101_AdityaMahyudiRamadhan_POSTTEST3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="2409106101_AdityaMahyudiRamadhan_POSTTEST3.js">
+
+</head>
+
+<body>
+
+    <header>
+        <h1> Dasboard PT. Ebos Group</h1>
+        <button id="themeToggle" class="theme-toggle-btn">
+            <span class="theme-icon"><i class="fas fa-moon"></i></span>
+            <span class="theme-text">Dark Mode</span>
+        </button>
+    </header>
+
+    <main>
+        <section id="tentang-kami">
+            <h2>Tentang Kami</h2>
+            <article>
+                <p>PT. Ebos Group adalah perusahaan terkemuka di bidang konstruksi dan infrastruktur, berdedikasi untuk menciptakan solusi inovatif dan berkelanjutan.</p>
+                <p>Kami memiliki visi untuk menjadi pemimpin dalam industri ini, membangun karya-karya yang berkontribusi pada kemajuan bangsa.</p>
+            </article>
+        </section>
+    </main>
+
+    <main>
+        <div class="form-container">
+            <h2>Tambah / Edit Data Pegawai</h2>
+
+            <form id="pegawaiForm">
+                
+                <input type="hidden" id="pegawaiId" name="id">
+
+                <div class="form-group">
+                    <label for="ID">ID:</label>
+                    <input type="text" id="ID" name="ID" placeholder="Masukkan Nomor ID Pegawai" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap Pegawai" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="jabatan">Jabatan:</label>
+                    <input type="text" id="jabatan" name="jabatan" placeholder="Contoh: Manajer" required>
+                </div>
+
+                <button type="submit">Simpan Data</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h2>Daftar Pegawai</h2>
+            <button id="loadDataBtn" class="btn">Ambil Data dari API</button>
+            <table id="pegawaiTable">
+             <thead>
+                 <tr>
+                  <th>ID</th>
+                  <th>Nama</th>
+                  <th>Jabatan</th>
+                  <th>Aksi</th>
+              </tr>
+          </thead>
+          <tbody id="pegawaiTableBody"></tbody>
+        </table>
+    </div>
+
+    </main>
+
+    <footer>
+        <p>Hak Cipta &copy; 2025 PT. Ebos Group. Semua Hak Dilindungi.</p>
+    </footer>
+
+  <script src="2409106101_AdityaMahyudiRamadhan_POSTTEST3.js" defer></script>
+</body>
+</html>
